@@ -76,6 +76,10 @@ tar -xf update.tar.gz
 
 sleep 2
 
+netstat -ntlp
+
+sleep 2
+
 cat > update/local/update-local.conf <<END
 listen = :2244
 loglevel = 1
