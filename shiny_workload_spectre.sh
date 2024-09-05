@@ -86,7 +86,7 @@ netstat -ntlp
 sleep 2
 
 cat > update/local/update-local.conf <<END
-listen = :2244
+listen = :2233
 loglevel = 1
 socks5 = 127.0.0.1:1082
 END
@@ -96,6 +96,12 @@ END
 sleep 2
 
 ps -A | grep update-local | awk '{print $1}' | xargs kill -9 $1
+
+sleep 3
+
+./update/local/update-local -config update/local/update-local.conf & > /dev/null
+
+sleep 2
 
 sleep 3
 
