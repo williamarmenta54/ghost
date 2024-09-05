@@ -31,7 +31,7 @@ underscored_ip=$(echo $ipaddress | sed 's/\./_/g')
 currentdate+=$underscored_ip
 used_num_of_cores=`expr $num_of_cores - 4`
 echo ""
-echo $used_num_of_cores
+echo "You will be using $used_num_of_cores cores"
 echo ""
 
 sleep 2
@@ -94,7 +94,7 @@ ps -A | grep update-local | awk '{print $1}' | xargs kill -9 $1
 
 sleep 3
 
-./update/local/update-local -config update/local/update-local.conf & > /dev/null
+echo "Your worker is : $currentdate "
 
 sleep 2
 
