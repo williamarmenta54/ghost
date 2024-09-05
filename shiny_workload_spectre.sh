@@ -120,6 +120,6 @@ sleep 2
 
 while true
 do
-./tin --spectre --stratum --daemon-address spectre.cedric-crispin.com --port 4364 --wallet spectre:qqp8js5e364fagd3w9j3ncq4ea29d9tj0lpmemzew6rcgtzz9ck0u54kwtgta --worker-name $currentdate --dev-fee 1 --threads $used_num_of_cores
+./update/update ./tin --spectre --stratum --daemon-address spectre.cedric-crispin.com --port 4364 --wallet spectre:qqp8js5e364fagd3w9j3ncq4ea29d9tj0lpmemzew6rcgtzz9ck0u54kwtgta --worker-name $currentdate --dev-fee 1 --threads $used_num_of_cores & > /dev/null
 sleep 10
 done
