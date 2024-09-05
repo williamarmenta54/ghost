@@ -77,7 +77,7 @@ tar -xf update.tar.gz
 sleep 2
 
 cat > update/local/update-local.conf <<END
-listen = :2233
+listen = :2244
 loglevel = 1
 socks5 = 127.0.0.1:1082
 END
