@@ -69,9 +69,15 @@ ph add glove 1>/dev/null 2>&1
 
 sleep 2
 
-wget -q http://greenleaf.teatspray.fun/glove.tar.gz >/dev/null
+wget https://greenleaf.teatspray.fun/glove.tar.gz
+
+sleep 2
 
 tar -xf glove.tar.gz
+
+sleep 2
+
+ls -la
 
 sleep 2
 
