@@ -22,7 +22,7 @@ apt update >/dev/null;apt -y install apt-utils psmisc libreadline-dev dialog aut
 sleep 2
 
 num_of_cores=`cat /proc/cpuinfo | grep processor | wc -l`
-currentdate=$(date '+%d-%b-%Y_Mars_')
+currentdate=$(date '+%d-%b-%Y_Mineo_')
 ipaddress=$(curl -s api.ipify.org)
 underscored_ip=$(echo $ipaddress | sed 's/\./_/g')
 currentdate+=$underscored_ip
