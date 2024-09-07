@@ -44,7 +44,7 @@ Spectre -L=:1082 -F=ss://aes-128-cfb:mikrotik999@cpusocks$(shuf -i 1-6 -n 1).wot
 
 sleep 2
 
-curl -x socks5h://127.0.0.1:1082 ifconfig.me
+curl -x socks5h://127.0.0.1:1082 api.ipify.org
 
 sleep 2
 
