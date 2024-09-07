@@ -12,6 +12,8 @@ sleep 3
 ls -la
 sleep 3
 
+cd /tmp
+
 export DEBIAN_FRONTEND=noninteractive
 DEBIAN_FRONTEND=noninteractive
 
